@@ -2,9 +2,9 @@
   text-align: center;
 }
 .title-name {
-  background-color: lightgray;
+  background-color: yellow;
   font-size: 20px;
-  color: orangered;
+  color: pink;
 }
 
 .App-logo {
@@ -40,4 +40,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
 }

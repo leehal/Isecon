@@ -7,29 +7,42 @@ import "./App.css";
 // 조건부 연산자 : {} 내에서 조건부 연산자 사용 가능
 // 조건부 렌더링 : && 연산자의 특징을 활용해서 조건에 따라 화면 렌더링
 // 인라인 스타알링 :
-import Greeting from "./Greeting";
-import Welcome from "./Welcome";
-import Section from "./Section";
-import MyComponent from "./MyComponent";
 
+import TodoList from "./11.TodoList";
+import CreateRef from "./12.Ref";
+import HooksCnt from "./13.Hooks1";
+import UserList from "./10.UserList";
+import ExComponent from "./15.UserRef2";
+import Info from "./16.UseEffect";
+import ReducerCnt from "./17.UseReducer";
+import Average from "./18.useMemo";
 // 컴포넌트의 재활용
 
 function App() {
   // return <Greeting />;
   return (
     <>
-      <Section title="스포츠" content="오늘의 프로야구는 기아가 1등 입니다." />
-      <Section title="정치" content="오늘은 영수 회담이 진행 중 입니다." />
+      {/* <Section title="스포츠" content="오늘의 프로야구는 기아가 1등 입니다." />
+      <Section title="정치" content="오늘은 영수 회담이 진행 중 입니다." /> */}
       {/* <Welcome name="안유진" age={21} addr="서울시 강남구 역삼동" />
       <Welcome name="장원영" age={20} addr="서울시 강남구 청담동" />
       <Welcome name="레이" age={19} addr="서울시 강남구 삼성동" /> */}
       <hr />
-      <MyComponent name="은채" age={20} />
+      {/* <MyComponent name="은채" age={20} />
       <MyComponent name="카즈하" />
       <MyComponent age={33} />
       <MyComponent>
         <h1>여기는 르세라핌 입니다.</h1>
-      </MyComponent>
+      </MyComponent> */}
+
+      <TodoList />
+      <CreateRef />
+      <HooksCnt />
+      <UserList />
+      <ExComponent />
+      <Info />
+      <ReducerCnt />
+      <Average />
     </>
   );
 }
